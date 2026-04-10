@@ -30,10 +30,12 @@ Sports organizations, teams, game-coverage broadcasters, and betting sectors inv
 ### Key Findings
 - All three models converge at **~55-56% accuracy** — marginally above random 
   baseline for a 3-class problem (33%)
+  ![Confusion Matrix](confusion_matrix.png)  
 - `threat_per_possession` ranked as the **top predictive feature** across all 
   models — validating the proxy metric approach
 - `shot_efficiency` also ranked in the top 5 — confirming shot quality matters 
   more than shot volume
+  ![Feature Importance](feature_importance.png)
 - Performance ceiling is data-driven not model-driven — Gradient Boosting 
   and Random Forest offer no meaningful improvement over Logistic Regression, 
   suggesting the limiting factor is feature quality not model complexity
@@ -67,7 +69,7 @@ The engineered proxy metrics show predictive potential and should be retained in
 [ESPN Soccer Data — Kaggle](https://www.kaggle.com/datasets/excel4soccer/espn-soccer-data)
 
 ### Notebook
-`soccer_match_prediction.ipynb` — Full analysis notebook
+`soccer_analysis.ipynb` — Full analysis notebook
 
 
 
